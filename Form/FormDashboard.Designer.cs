@@ -48,6 +48,7 @@
             timer1 = new System.Windows.Forms.Timer(components);
             userControlSetting1 = new User_Control.UserControlSetting();
             userControlClient1 = new User_Control.UserControlClient();
+            userControlRoom1 = new User_Control.UserControlRoom();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -285,12 +286,24 @@
             userControlClient1.TabIndex = 0;
             userControlClient1.Visible = false;
             // 
+            // userControlRoom1
+            // 
+            userControlRoom1.BackColor = Color.White;
+            userControlRoom1.Dock = DockStyle.Fill;
+            userControlRoom1.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            userControlRoom1.Location = new Point(0, 94);
+            userControlRoom1.Name = "userControlRoom1";
+            userControlRoom1.Size = new Size(1680, 674);
+            userControlRoom1.TabIndex = 0;
+            userControlRoom1.Visible = false;
+            // 
             // FormDashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1680, 810);
+            Controls.Add(userControlRoom1);
             Controls.Add(userControlClient1);
             Controls.Add(userControlSetting1);
             Controls.Add(panel2);
@@ -333,5 +346,6 @@
         private System.Windows.Forms.Timer timer1;
         private User_Control.UserControlSetting userControlSetting1;
         private User_Control.UserControlClient userControlClient1;
+        private User_Control.UserControlRoom userControlRoom1;
     }
 }

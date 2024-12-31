@@ -278,7 +278,6 @@ namespace ReservationHotel.User_Control
             if (e.RowIndex != -1)
             {
                 DataGridViewRow row = dataGridViewClient.Rows[e.RowIndex];
-
                 ID = row.Cells[0].Value?.ToString() ?? string.Empty;
                 textBoxEmail1.Text = row.Cells[1].Value?.ToString() ?? string.Empty;
                 textBoxPasswordClient1.Text = row.Cells[2].Value?.ToString() ?? string.Empty;

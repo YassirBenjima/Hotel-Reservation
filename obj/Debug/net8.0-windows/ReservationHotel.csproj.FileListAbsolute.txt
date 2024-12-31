@@ -49,6 +49,7 @@ C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.FormLogIn.resources
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.Properties.Resources.resources
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.User_Control.UserControlClient.resources
+C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.User_Control.UserControlRoom.resources
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.User_Control.UserControlSetting.resources
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.csproj.GenerateResource.cache
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.GeneratedMSBuildEditorConfig.editorconfig

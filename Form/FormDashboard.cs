@@ -49,6 +49,7 @@ namespace ReservationHotel
             MovePanel(buttonDashboard);
             userControlSetting1.Hide();
             userControlClient1.Hide();
+            userControlRoom1.Hide();
         }
 
         private void buttonClient_Click(object sender, EventArgs e)
@@ -56,6 +57,7 @@ namespace ReservationHotel
             MovePanel(buttonClient);
             userControlSetting1.Hide();
             userControlClient1.Show();
+            userControlRoom1.Hide();
 
         }
 
@@ -64,7 +66,7 @@ namespace ReservationHotel
             MovePanel(buttonRoom);
             userControlSetting1.Hide(); 
             userControlClient1.Hide();
-
+            userControlRoom1.Show();
         }
 
         private void buttonReservation_Click(object sender, EventArgs e)
@@ -72,7 +74,7 @@ namespace ReservationHotel
             MovePanel(buttonReservation);
             userControlSetting1.Hide();
             userControlClient1.Hide();
-
+            userControlRoom1.Hide();
         }
 
         private void buttonSetting_Click(object sender, EventArgs e)
@@ -81,6 +83,7 @@ namespace ReservationHotel
             userControlSetting1.Clear();
             userControlClient1.Hide();
             userControlSetting1.Show();
+            userControlRoom1.Hide();
         }
     }
 }
