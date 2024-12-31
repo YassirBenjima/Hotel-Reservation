@@ -47,6 +47,7 @@
             label1 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             userControlSetting1 = new User_Control.UserControlSetting();
+            userControlClient1 = new User_Control.UserControlClient();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -151,7 +152,7 @@
             buttonClient.Name = "buttonClient";
             buttonClient.Size = new Size(114, 29);
             buttonClient.TabIndex = 2;
-            buttonClient.Text = "Cliente";
+            buttonClient.Text = "Client";
             buttonClient.UseVisualStyleBackColor = true;
             buttonClient.Click += buttonClient_Click;
             // 
@@ -273,12 +274,24 @@
             userControlSetting1.TabIndex = 1;
             userControlSetting1.Visible = false;
             // 
+            // userControlClient1
+            // 
+            userControlClient1.BackColor = Color.White;
+            userControlClient1.Dock = DockStyle.Fill;
+            userControlClient1.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            userControlClient1.Location = new Point(0, 94);
+            userControlClient1.Name = "userControlClient1";
+            userControlClient1.Size = new Size(1680, 674);
+            userControlClient1.TabIndex = 0;
+            userControlClient1.Visible = false;
+            // 
             // FormDashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1680, 810);
+            Controls.Add(userControlClient1);
             Controls.Add(userControlSetting1);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -319,5 +332,6 @@
         private Panel panelSlide;
         private System.Windows.Forms.Timer timer1;
         private User_Control.UserControlSetting userControlSetting1;
+        private User_Control.UserControlClient userControlClient1;
     }
 }
