@@ -41,6 +41,25 @@
           }
         }
       },
+      "BouncyCastle.Cryptography/2.4.0": {
+        "runtime": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.4.0.33771"
+          }
+        }
+      },
+      "iTextSharp/5.5.13.4": {
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.4.0"
+        },
+        "runtime": {
+          "lib/net461/itextsharp.dll": {
+            "assemblyVersion": "5.5.13.4",
+            "fileVersion": "5.5.13.4"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -481,6 +500,20 @@
       "sha512": "sha512-Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
+    },
+    "BouncyCastle.Cryptography/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SwXsAV3sMvAU/Nn31pbjhWurYSjJ+/giI/0n6tCrYoupEK34iIHCuk3STAd9fx8yudM85KkLSVdn951vTng/vQ==",
+      "path": "bouncycastle.cryptography/2.4.0",
+      "hashPath": "bouncycastle.cryptography.2.4.0.nupkg.sha512"
+    },
+    "iTextSharp/5.5.13.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/cvCNv8AJ+XuD99u4NfHSSxkBJKTdvP36wcfQF9V1Cjzi1ycyFSa4vJ64a3DhFVUTKVO60WF8OmAqngQDTHgYA==",
+      "path": "itextsharp/5.5.13.4",
+      "hashPath": "itextsharp.5.5.13.4.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",

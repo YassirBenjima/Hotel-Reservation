@@ -425,6 +425,7 @@
             tabPageUpdateDeleteRoom.TabIndex = 2;
             tabPageUpdateDeleteRoom.Text = "Mettre à jour et supprimer une chambre";
             tabPageUpdateDeleteRoom.UseVisualStyleBackColor = true;
+            tabPageUpdateDeleteRoom.Leave += tabPageUpdateDeleteRoom_Leave;
             // 
             // buttonDelete
             // 

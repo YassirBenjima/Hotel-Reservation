@@ -5,6 +5,8 @@ C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\bin\Debug\net8.0-
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\bin\Debug\net8.0-windows\ReservationHotel.pdb
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\bin\Debug\net8.0-windows\Azure.Core.dll
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\bin\Debug\net8.0-windows\itextsharp.dll
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
@@ -49,6 +51,7 @@ C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.FormLogIn.resources
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.Properties.Resources.resources
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.User_Control.UserControlClient.resources
+C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.User_Control.UserControlReservation.resources
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.User_Control.UserControlRoom.resources
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.User_Control.UserControlSetting.resources
 C:\Users\Yassir\source\repos\ReservationHotel\ReservationHotel\obj\Debug\net8.0-windows\ReservationHotel.csproj.GenerateResource.cache

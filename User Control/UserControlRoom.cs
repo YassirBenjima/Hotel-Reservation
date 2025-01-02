@@ -315,5 +315,10 @@ namespace ReservationHotel.User_Control
                 }
             }
         }
+
+        private void tabPageUpdateDeleteRoom_Leave(object sender, EventArgs e)
+        {
+            Clear1();
+        }
     }
 }

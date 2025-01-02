@@ -7,8 +7,6 @@ namespace ReservationHotel
 {
     public partial class FormLogIn : Form
     {
-        private string connect = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Yassir\\Documents\\HotelMangementSystem.mdf;Integrated Security=True;Connect Timeout=30";
-
         public FormLogIn()
         {
             InitializeComponent();

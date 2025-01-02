@@ -49,6 +49,7 @@
             userControlSetting1 = new User_Control.UserControlSetting();
             userControlClient1 = new User_Control.UserControlClient();
             userControlRoom1 = new User_Control.UserControlRoom();
+            userControlReservation1 = new User_Control.UserControlReservation();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -297,12 +298,24 @@
             userControlRoom1.TabIndex = 0;
             userControlRoom1.Visible = false;
             // 
+            // userControlReservation1
+            // 
+            userControlReservation1.Anchor = AnchorStyles.None;
+            userControlReservation1.BackColor = Color.White;
+            userControlReservation1.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            userControlReservation1.Location = new Point(291, 201);
+            userControlReservation1.Name = "userControlReservation1";
+            userControlReservation1.Size = new Size(1102, 462);
+            userControlReservation1.TabIndex = 0;
+            userControlReservation1.Visible = false;
+            // 
             // FormDashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1680, 810);
+            Controls.Add(userControlReservation1);
             Controls.Add(userControlRoom1);
             Controls.Add(userControlClient1);
             Controls.Add(userControlSetting1);
@@ -347,5 +360,6 @@
         private User_Control.UserControlSetting userControlSetting1;
         private User_Control.UserControlClient userControlClient1;
         private User_Control.UserControlRoom userControlRoom1;
+        private User_Control.UserControlReservation userControlReservation1;
     }
 }
