@@ -10,6 +10,9 @@
     <Compile Update="User Control\UserControlClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="User Control\UserControlDashoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="User Control\UserControlReservation.cs">
       <SubType>UserControl</SubType>
     </Compile>

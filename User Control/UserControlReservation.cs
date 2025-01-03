@@ -55,41 +55,35 @@ namespace ReservationHotel.User_Control
 
         private void LoadRoomTypes()
         {
-            try
+            using (SqlConnection connection = new SqlConnection(conn))
             {
-                using (SqlConnection connection = new SqlConnection(conn))
+                connection.Open();
+                string query = @"
+            SELECT DISTINCT Room_Type
+            FROM Rooms
+            WHERE Room_Status = 'Actif'
+            AND Room_Free = 'Oui'
+            AND Room_Number NOT IN (
+                SELECT Reservation_Room_Number
+                FROM Reservations
+                WHERE Reservation_In <= GETDATE() AND Reservation_Out >= GETDATE()
+            );";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataReader reader = command.ExecuteReader();
+
+                comboBoxTypeRoomReservation.Items.Clear();
+                while (reader.Read())
                 {
-                    connection.Open();
-                    string query = @"
-                SELECT DISTINCT Room_Type
-                FROM Rooms
-                WHERE Room_Status = 'Actif'
-                AND Room_Free = 'Oui'
-                AND Room_Number NOT IN (
-                    SELECT Reservation_Room_Number
-                    FROM Reservations
-                    WHERE Reservation_In <= GETDATE() AND Reservation_Out >= GETDATE()
-                );";
-
-                    SqlCommand command = new SqlCommand(query, connection);
-                    SqlDataReader reader = command.ExecuteReader();
-
-                    comboBoxTypeRoomReservation.Items.Clear();
-                    while (reader.Read())
-                    {
-                        comboBoxTypeRoomReservation.Items.Add(reader["Room_Type"].ToString());
-                    }
-                    reader.Close();
-
-                    if (comboBoxTypeRoomReservation.Items.Count > 0)
-                        comboBoxTypeRoomReservation.SelectedIndex = 0;
+                    comboBoxTypeRoomReservation.Items.Add(reader["Room_Type"].ToString());
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erreur lors du chargement des types de chambre : " + ex.Message);
+                reader.Close();
+
+                if (comboBoxTypeRoomReservation.Items.Count > 0)
+                    comboBoxTypeRoomReservation.SelectedIndex = 0;
             }
         }
+
 
 
         private void comboBoxTypeRoomReservation_SelectedIndexChanged(object sender, EventArgs e)

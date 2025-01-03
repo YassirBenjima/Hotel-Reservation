@@ -50,6 +50,7 @@
             userControlClient1 = new User_Control.UserControlClient();
             userControlRoom1 = new User_Control.UserControlRoom();
             userControlReservation1 = new User_Control.UserControlReservation();
+            userControlDashoard1 = new User_Control.UserControlDashoard();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -303,11 +304,21 @@
             userControlReservation1.Anchor = AnchorStyles.None;
             userControlReservation1.BackColor = Color.White;
             userControlReservation1.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            userControlReservation1.Location = new Point(291, 201);
+            userControlReservation1.Location = new Point(273, 186);
             userControlReservation1.Name = "userControlReservation1";
-            userControlReservation1.Size = new Size(1102, 462);
+            userControlReservation1.Size = new Size(1221, 582);
             userControlReservation1.TabIndex = 0;
             userControlReservation1.Visible = false;
+            // 
+            // userControlDashoard1
+            // 
+            userControlDashoard1.Anchor = AnchorStyles.None;
+            userControlDashoard1.BackColor = Color.White;
+            userControlDashoard1.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            userControlDashoard1.Location = new Point(273, 186);
+            userControlDashoard1.Name = "userControlDashoard1";
+            userControlDashoard1.Size = new Size(1102, 462);
+            userControlDashoard1.TabIndex = 2;
             // 
             // FormDashboard
             // 
@@ -315,6 +326,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1680, 810);
+            Controls.Add(userControlDashoard1);
             Controls.Add(userControlReservation1);
             Controls.Add(userControlRoom1);
             Controls.Add(userControlClient1);
@@ -361,5 +373,6 @@
         private User_Control.UserControlClient userControlClient1;
         private User_Control.UserControlRoom userControlRoom1;
         private User_Control.UserControlReservation userControlReservation1;
+        private User_Control.UserControlDashoard userControlDashoard1;
     }
 }
