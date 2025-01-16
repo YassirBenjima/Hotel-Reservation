@@ -30,6 +30,8 @@
         {
             tabControlRoom = new TabControl();
             tabPageAddRoom = new TabPage();
+            buttonUpload = new Button();
+            pictureBoxImageRoom = new PictureBox();
             comboBoxTypeRoom = new ComboBox();
             comboBoxStatusRoom = new ComboBox();
             comboBoxFreeRoom = new ComboBox();
@@ -58,6 +60,8 @@
             label7 = new Label();
             label6 = new Label();
             tabPageUpdateDeleteRoom = new TabPage();
+            buttonUpload1 = new Button();
+            pictureBoxImageRoom1 = new PictureBox();
             buttonDelete = new Button();
             buttonUpdate = new Button();
             comboBoxTypeRoom1 = new ComboBox();
@@ -76,9 +80,11 @@
             label18 = new Label();
             tabControlRoom.SuspendLayout();
             tabPageAddRoom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxImageRoom).BeginInit();
             tabPageSearchRoom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewRoom).BeginInit();
             tabPageUpdateDeleteRoom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxImageRoom1).BeginInit();
             SuspendLayout();
             // 
             // tabControlRoom
@@ -96,6 +102,8 @@
             // 
             // tabPageAddRoom
             // 
+            tabPageAddRoom.Controls.Add(buttonUpload);
+            tabPageAddRoom.Controls.Add(pictureBoxImageRoom);
             tabPageAddRoom.Controls.Add(comboBoxTypeRoom);
             tabPageAddRoom.Controls.Add(comboBoxStatusRoom);
             tabPageAddRoom.Controls.Add(comboBoxFreeRoom);
@@ -120,12 +128,39 @@
             tabPageAddRoom.UseVisualStyleBackColor = true;
             tabPageAddRoom.Leave += tabPageAddRoom_Leave;
             // 
+            // buttonUpload
+            // 
+            buttonUpload.Anchor = AnchorStyles.None;
+            buttonUpload.BackColor = Color.FromArgb(25, 135, 84);
+            buttonUpload.Cursor = Cursors.Hand;
+            buttonUpload.FlatStyle = FlatStyle.Flat;
+            buttonUpload.Font = new Font("Arial", 9.75F, FontStyle.Bold);
+            buttonUpload.ForeColor = SystemColors.ButtonHighlight;
+            buttonUpload.Location = new Point(539, 253);
+            buttonUpload.Name = "buttonUpload";
+            buttonUpload.Size = new Size(92, 29);
+            buttonUpload.TabIndex = 48;
+            buttonUpload.Text = "Importer";
+            buttonUpload.UseVisualStyleBackColor = false;
+            buttonUpload.Click += buttonUpload_Click;
+            // 
+            // pictureBoxImageRoom
+            // 
+            pictureBoxImageRoom.BackColor = Color.White;
+            pictureBoxImageRoom.BorderStyle = BorderStyle.Fixed3D;
+            pictureBoxImageRoom.Location = new Point(390, 215);
+            pictureBoxImageRoom.Name = "pictureBoxImageRoom";
+            pictureBoxImageRoom.Size = new Size(105, 98);
+            pictureBoxImageRoom.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxImageRoom.TabIndex = 47;
+            pictureBoxImageRoom.TabStop = false;
+            // 
             // comboBoxTypeRoom
             // 
             comboBoxTypeRoom.Anchor = AnchorStyles.None;
             comboBoxTypeRoom.FormattingEnabled = true;
             comboBoxTypeRoom.Items.AddRange(new object[] { "Seule", "Double", "Twin", "Suite", "Deluxe", "Studio" });
-            comboBoxTypeRoom.Location = new Point(165, 92);
+            comboBoxTypeRoom.Location = new Point(95, 75);
             comboBoxTypeRoom.Name = "comboBoxTypeRoom";
             comboBoxTypeRoom.Size = new Size(223, 23);
             comboBoxTypeRoom.TabIndex = 46;
@@ -135,7 +170,7 @@
             comboBoxStatusRoom.Anchor = AnchorStyles.None;
             comboBoxStatusRoom.FormattingEnabled = true;
             comboBoxStatusRoom.Items.AddRange(new object[] { "Actif", "Inactif" });
-            comboBoxStatusRoom.Location = new Point(616, 295);
+            comboBoxStatusRoom.Location = new Point(763, 175);
             comboBoxStatusRoom.Name = "comboBoxStatusRoom";
             comboBoxStatusRoom.Size = new Size(223, 23);
             comboBoxStatusRoom.TabIndex = 45;
@@ -145,7 +180,7 @@
             comboBoxFreeRoom.Anchor = AnchorStyles.None;
             comboBoxFreeRoom.FormattingEnabled = true;
             comboBoxFreeRoom.Items.AddRange(new object[] { "Oui", "Non" });
-            comboBoxFreeRoom.Location = new Point(165, 194);
+            comboBoxFreeRoom.Location = new Point(763, 77);
             comboBoxFreeRoom.Name = "comboBoxFreeRoom";
             comboBoxFreeRoom.Size = new Size(223, 23);
             comboBoxFreeRoom.TabIndex = 44;
@@ -155,7 +190,7 @@
             label10.Anchor = AnchorStyles.None;
             label10.AutoSize = true;
             label10.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label10.Location = new Point(292, 167);
+            label10.Location = new Point(886, 66);
             label10.Name = "label10";
             label10.Size = new Size(0, 16);
             label10.TabIndex = 43;
@@ -163,7 +198,7 @@
             // textBoxPriceRoom
             // 
             textBoxPriceRoom.Anchor = AnchorStyles.None;
-            textBoxPriceRoom.Location = new Point(165, 297);
+            textBoxPriceRoom.Location = new Point(95, 177);
             textBoxPriceRoom.Name = "textBoxPriceRoom";
             textBoxPriceRoom.Size = new Size(223, 21);
             textBoxPriceRoom.TabIndex = 42;
@@ -173,7 +208,7 @@
             label8.Anchor = AnchorStyles.None;
             label8.AutoSize = true;
             label8.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label8.Location = new Point(578, 251);
+            label8.Location = new Point(723, 133);
             label8.Name = "label8";
             label8.Size = new Size(56, 16);
             label8.TabIndex = 40;
@@ -184,7 +219,7 @@
             label9.Anchor = AnchorStyles.None;
             label9.AutoSize = true;
             label9.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label9.Location = new Point(127, 251);
+            label9.Location = new Point(57, 133);
             label9.Name = "label9";
             label9.Size = new Size(45, 16);
             label9.TabIndex = 39;
@@ -193,7 +228,7 @@
             // textBoxCapacityRoom
             // 
             textBoxCapacityRoom.Anchor = AnchorStyles.None;
-            textBoxCapacityRoom.Location = new Point(616, 196);
+            textBoxCapacityRoom.Location = new Point(428, 177);
             textBoxCapacityRoom.Name = "textBoxCapacityRoom";
             textBoxCapacityRoom.Size = new Size(223, 21);
             textBoxCapacityRoom.TabIndex = 37;
@@ -207,7 +242,7 @@
             buttonAdd.FlatStyle = FlatStyle.Flat;
             buttonAdd.Font = new Font("Arial", 9.75F, FontStyle.Bold);
             buttonAdd.ForeColor = Color.White;
-            buttonAdd.Location = new Point(388, 334);
+            buttonAdd.Location = new Point(403, 332);
             buttonAdd.Name = "buttonAdd";
             buttonAdd.Size = new Size(206, 34);
             buttonAdd.TabIndex = 36;
@@ -220,7 +255,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label4.Location = new Point(578, 150);
+            label4.Location = new Point(390, 133);
             label4.Name = "label4";
             label4.Size = new Size(71, 16);
             label4.TabIndex = 35;
@@ -231,7 +266,7 @@
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label5.Location = new Point(127, 150);
+            label5.Location = new Point(723, 32);
             label5.Name = "label5";
             label5.Size = new Size(48, 16);
             label5.TabIndex = 34;
@@ -240,7 +275,7 @@
             // textBoxPhoneRoom
             // 
             textBoxPhoneRoom.Anchor = AnchorStyles.None;
-            textBoxPhoneRoom.Location = new Point(616, 83);
+            textBoxPhoneRoom.Location = new Point(428, 77);
             textBoxPhoneRoom.Name = "textBoxPhoneRoom";
             textBoxPhoneRoom.Size = new Size(223, 21);
             textBoxPhoneRoom.TabIndex = 33;
@@ -250,7 +285,7 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label3.Location = new Point(578, 49);
+            label3.Location = new Point(390, 32);
             label3.Name = "label3";
             label3.Size = new Size(83, 16);
             label3.TabIndex = 32;
@@ -261,7 +296,7 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label2.Location = new Point(127, 49);
+            label2.Location = new Point(57, 32);
             label2.Name = "label2";
             label2.Size = new Size(45, 16);
             label2.TabIndex = 30;
@@ -402,6 +437,8 @@
             // 
             // tabPageUpdateDeleteRoom
             // 
+            tabPageUpdateDeleteRoom.Controls.Add(buttonUpload1);
+            tabPageUpdateDeleteRoom.Controls.Add(pictureBoxImageRoom1);
             tabPageUpdateDeleteRoom.Controls.Add(buttonDelete);
             tabPageUpdateDeleteRoom.Controls.Add(buttonUpdate);
             tabPageUpdateDeleteRoom.Controls.Add(comboBoxTypeRoom1);
@@ -426,6 +463,33 @@
             tabPageUpdateDeleteRoom.Text = "Mettre à jour et supprimer une chambre";
             tabPageUpdateDeleteRoom.UseVisualStyleBackColor = true;
             tabPageUpdateDeleteRoom.Leave += tabPageUpdateDeleteRoom_Leave;
+            // 
+            // buttonUpload1
+            // 
+            buttonUpload1.Anchor = AnchorStyles.None;
+            buttonUpload1.BackColor = Color.FromArgb(25, 135, 84);
+            buttonUpload1.Cursor = Cursors.Hand;
+            buttonUpload1.FlatStyle = FlatStyle.Flat;
+            buttonUpload1.Font = new Font("Arial", 9.75F, FontStyle.Bold);
+            buttonUpload1.ForeColor = SystemColors.ButtonHighlight;
+            buttonUpload1.Location = new Point(531, 269);
+            buttonUpload1.Name = "buttonUpload1";
+            buttonUpload1.Size = new Size(92, 29);
+            buttonUpload1.TabIndex = 65;
+            buttonUpload1.Text = "Importer";
+            buttonUpload1.UseVisualStyleBackColor = false;
+            buttonUpload1.Click += buttonUpload1_Click;
+            // 
+            // pictureBoxImageRoom1
+            // 
+            pictureBoxImageRoom1.BackColor = Color.White;
+            pictureBoxImageRoom1.BorderStyle = BorderStyle.Fixed3D;
+            pictureBoxImageRoom1.Location = new Point(382, 231);
+            pictureBoxImageRoom1.Name = "pictureBoxImageRoom1";
+            pictureBoxImageRoom1.Size = new Size(105, 98);
+            pictureBoxImageRoom1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxImageRoom1.TabIndex = 64;
+            pictureBoxImageRoom1.TabStop = false;
             // 
             // buttonDelete
             // 
@@ -466,7 +530,7 @@
             comboBoxTypeRoom1.Anchor = AnchorStyles.None;
             comboBoxTypeRoom1.FormattingEnabled = true;
             comboBoxTypeRoom1.Items.AddRange(new object[] { "Seule", "Double", "Twin", "Suite", "Deluxe", "Studio" });
-            comboBoxTypeRoom1.Location = new Point(165, 92);
+            comboBoxTypeRoom1.Location = new Point(107, 80);
             comboBoxTypeRoom1.Name = "comboBoxTypeRoom1";
             comboBoxTypeRoom1.Size = new Size(223, 23);
             comboBoxTypeRoom1.TabIndex = 61;
@@ -476,7 +540,7 @@
             comboBoxStatusRoom1.Anchor = AnchorStyles.None;
             comboBoxStatusRoom1.FormattingEnabled = true;
             comboBoxStatusRoom1.Items.AddRange(new object[] { "Actif", "Inactif" });
-            comboBoxStatusRoom1.Location = new Point(616, 295);
+            comboBoxStatusRoom1.Location = new Point(770, 185);
             comboBoxStatusRoom1.Name = "comboBoxStatusRoom1";
             comboBoxStatusRoom1.Size = new Size(223, 23);
             comboBoxStatusRoom1.TabIndex = 60;
@@ -486,7 +550,7 @@
             comboBoxFreeRoom1.Anchor = AnchorStyles.None;
             comboBoxFreeRoom1.FormattingEnabled = true;
             comboBoxFreeRoom1.Items.AddRange(new object[] { "Oui", "Non" });
-            comboBoxFreeRoom1.Location = new Point(165, 194);
+            comboBoxFreeRoom1.Location = new Point(771, 78);
             comboBoxFreeRoom1.Name = "comboBoxFreeRoom1";
             comboBoxFreeRoom1.Size = new Size(223, 23);
             comboBoxFreeRoom1.TabIndex = 59;
@@ -496,7 +560,7 @@
             label11.Anchor = AnchorStyles.None;
             label11.AutoSize = true;
             label11.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label11.Location = new Point(292, 167);
+            label11.Location = new Point(897, 54);
             label11.Name = "label11";
             label11.Size = new Size(0, 16);
             label11.TabIndex = 58;
@@ -504,7 +568,7 @@
             // textBoxPriceRoom1
             // 
             textBoxPriceRoom1.Anchor = AnchorStyles.None;
-            textBoxPriceRoom1.Location = new Point(165, 297);
+            textBoxPriceRoom1.Location = new Point(420, 187);
             textBoxPriceRoom1.Name = "textBoxPriceRoom1";
             textBoxPriceRoom1.Size = new Size(223, 21);
             textBoxPriceRoom1.TabIndex = 57;
@@ -514,7 +578,7 @@
             label12.Anchor = AnchorStyles.None;
             label12.AutoSize = true;
             label12.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label12.Location = new Point(578, 251);
+            label12.Location = new Point(732, 141);
             label12.Name = "label12";
             label12.Size = new Size(56, 16);
             label12.TabIndex = 56;
@@ -525,7 +589,7 @@
             label13.Anchor = AnchorStyles.None;
             label13.AutoSize = true;
             label13.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label13.Location = new Point(127, 251);
+            label13.Location = new Point(382, 141);
             label13.Name = "label13";
             label13.Size = new Size(45, 16);
             label13.TabIndex = 55;
@@ -534,7 +598,7 @@
             // textBoxCapacityRoom1
             // 
             textBoxCapacityRoom1.Anchor = AnchorStyles.None;
-            textBoxCapacityRoom1.Location = new Point(616, 196);
+            textBoxCapacityRoom1.Location = new Point(107, 187);
             textBoxCapacityRoom1.Name = "textBoxCapacityRoom1";
             textBoxCapacityRoom1.Size = new Size(223, 21);
             textBoxCapacityRoom1.TabIndex = 54;
@@ -544,7 +608,7 @@
             label14.Anchor = AnchorStyles.None;
             label14.AutoSize = true;
             label14.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label14.Location = new Point(578, 150);
+            label14.Location = new Point(69, 141);
             label14.Name = "label14";
             label14.Size = new Size(71, 16);
             label14.TabIndex = 52;
@@ -555,7 +619,7 @@
             label15.Anchor = AnchorStyles.None;
             label15.AutoSize = true;
             label15.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label15.Location = new Point(127, 150);
+            label15.Location = new Point(732, 37);
             label15.Name = "label15";
             label15.Size = new Size(48, 16);
             label15.TabIndex = 51;
@@ -564,7 +628,7 @@
             // textBoxPhoneRoom1
             // 
             textBoxPhoneRoom1.Anchor = AnchorStyles.None;
-            textBoxPhoneRoom1.Location = new Point(616, 83);
+            textBoxPhoneRoom1.Location = new Point(426, 80);
             textBoxPhoneRoom1.Name = "textBoxPhoneRoom1";
             textBoxPhoneRoom1.Size = new Size(223, 21);
             textBoxPhoneRoom1.TabIndex = 50;
@@ -574,7 +638,7 @@
             label16.Anchor = AnchorStyles.None;
             label16.AutoSize = true;
             label16.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label16.Location = new Point(578, 49);
+            label16.Location = new Point(382, 37);
             label16.Name = "label16";
             label16.Size = new Size(83, 16);
             label16.TabIndex = 49;
@@ -585,7 +649,7 @@
             label17.Anchor = AnchorStyles.None;
             label17.AutoSize = true;
             label17.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            label17.Location = new Point(127, 49);
+            label17.Location = new Point(69, 37);
             label17.Name = "label17";
             label17.Size = new Size(45, 16);
             label17.TabIndex = 48;
@@ -614,11 +678,13 @@
             tabControlRoom.ResumeLayout(false);
             tabPageAddRoom.ResumeLayout(false);
             tabPageAddRoom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxImageRoom).EndInit();
             tabPageSearchRoom.ResumeLayout(false);
             tabPageSearchRoom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewRoom).EndInit();
             tabPageUpdateDeleteRoom.ResumeLayout(false);
             tabPageUpdateDeleteRoom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxImageRoom1).EndInit();
             ResumeLayout(false);
         }
 
@@ -670,5 +736,9 @@
         private Label label18;
         private Button buttonDelete;
         private Button buttonUpdate;
+        private Button buttonUpload;
+        private PictureBox pictureBoxImageRoom;
+        private Button buttonUpload1;
+        private PictureBox pictureBoxImageRoom1;
     }
 }
